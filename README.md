@@ -1,1 +1,3 @@
-# training aaaa
+# training 
+ogo riku
+kkkkkk
