@@ -23,14 +23,24 @@ public class WebController {
 		model.addAttribute("datetime", LocalDateTime.now());
 		return "index";
 	}
-
+	
+	/**
+	 * NullPointerExceptionを発生させる。
+	 *
+	 * @return 無し
+	 */
 	@GetMapping(value = "/ex1")
 	public String NullPointerException() {
 		String value = Math.random() < 1 ? null : "a";
 		System.out.println(value.toLowerCase());
 		return "";
 	}
-
+	
+	/**
+	 * NumberFormatExceptionを発生させる。
+	 *
+	 * @return 無し
+	 */
 	@GetMapping(value = "/ex2")
 	public String NumberFormatException() {
 		String value = "a";
@@ -38,7 +48,12 @@ public class WebController {
 		System.out.println(num);
 		return "";
 	}
-
+	
+	/**
+	 * IndexOutOfBoundsExceptionを発生させる。
+	 *
+	 * @return 無し
+	 */
 	@GetMapping(value = "/ex3")
 	public String IndexOutOfBoundsException() {
 		List<String> list = new ArrayList<>();
