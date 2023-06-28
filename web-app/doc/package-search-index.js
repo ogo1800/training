@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"com.example.demo.controller"},{"l":"com.example.demo.entity"},{"l":"com.example.demo.repository"},{"l":"com.example.demo.service"},{"l":"すべてのパッケージ","u":"allpackages-index.html"}];updateSearchResults();
+packageSearchIndex = [{"l":"com.example.demo"},{"l":"com.example.demo.controller"},{"l":"com.example.demo.entity"},{"l":"com.example.demo.repository"},{"l":"com.example.demo.service"},{"l":"すべてのパッケージ","u":"allpackages-index.html"}];updateSearchResults();

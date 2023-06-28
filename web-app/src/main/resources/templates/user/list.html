@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:replace="~{common/head :: head_fragment(scripts = ~{::script}, links = ~{::link})}">
 </head>
 <body>
-
   <div class="container">
     <h1>ユーザー情報: 一覧画面</h1>
     <br>
-    
+
     <div class="float-end">
       <a th:href="@{/user/add}" class="btn btn-primary">新規登録はこちら</a>
     </div>
-    
 
-    <table>
+    <table class="table table-striped">
       <thead>
         <tr>
           <th>ID</th>
@@ -35,8 +32,7 @@
           <td><a th:href="@{/user/{id}(id=*{id})}" class="btn btn-secondary">詳細</a></td>
         </tr>
       </tbody>
-    <table class="table table-striped">
+    </table>
   </div>
-
 </body>
 </html>
